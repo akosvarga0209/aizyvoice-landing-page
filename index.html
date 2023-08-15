@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="dist/css/icons.css">
 	<script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <style>
+	  .responsive-iframe {
+	    position: relative;
+	    overflow: hidden;
+	    padding-top: 56.25%; /* 16:9 aspect ratio (height / width) */
+	  }
+
+	  .responsive-iframe iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	  }
+</style>
 </head>
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
@@ -383,7 +398,9 @@
                         <div class="newsletter-header text-center">
                             <h2 class="section-title mt-0">Stay in the know</h2>
                             <p class="section-paragraph">Be the first to experience our revolutionary new product with our exclusive early access demo!</p>
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScq1TEOAfFovfwNagBDzppSZOsIXl0lfGR_ijxnufWNRYKijg/viewform?embedded=true" width="640" height="554" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            <div class="responsive-iframe">
+							  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScq1TEOAfFovfwNagBDzppSZOsIXl0lfGR_ijxnufWNRYKijg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+							</div>
                         </div>
                     </div>
                 </div>
